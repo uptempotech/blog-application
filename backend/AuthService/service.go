@@ -13,8 +13,8 @@ import (
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/h2c"
 
-	"uptempo.tech/blog-application/global"
-	"uptempo.tech/blog-application/proto"
+	"github.com/uptempotech/blog-application/global"
+	"github.com/uptempotech/blog-application/proto"
 
 	"github.com/improbable-eng/grpc-web/go/grpcweb"
 	"go.mongodb.org/mongo-driver/bson"
