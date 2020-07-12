@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div.authentication-div {
+  margin: 20px auto;
+  padding: 30px;
+  text-align: center;
+  background: #e8e8e8;
+  width: 95%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+div.authentication-div .error {
+  color: red;
+}
+div.authentication-div input {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 4px;
+  border: none;
+}
+div.authentication-div input:focus {
+  outline: none;
+  border: 2px solid rgba(25, 174, 255, 0.4);
+}
+div.authentication-div label.input-label {
+  display: block;
+  margin-top: 20px;
+}
+div.authentication-div button {
+  cursor: pointer;
+  padding: 5px 35px;
+  margin: 10px auto;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  background-color: #1957ff;
+  color: white;
+  font-size: 14pt;
+}
+
+div.home-div div.button-container {
+  padding: 30px;
+  width: 95%;
+  margin: 25px auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  background-color: #e8e8e8;
+  border-radius: 14px;
+  justify-content: space-around;
+}
+div.home-div div.button-container button {
+  cursor: pointer;
+  border: none;
+  padding: 15px 25px;
+  background-color: #18aeff;
+  border-radius: 6px;
+  color: white;
+}
+div.home-div div.button-container h2 {
+  text-align: center;
+}
+div.home-div div.auth-text {
+  padding: 30px;
+  width: 95%;
+  margin: 25px auto;
+  max-width: 500px;
+  background-color: #e8e8e8;
+  border-radius: 14px;
+}
+div.home-div div.auth-text button {
+  display: block;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  margin: 25px 0 0 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=/app.55bab2ff.css.map */
