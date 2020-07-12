@@ -4,9 +4,9 @@ import (
 	"context"
 	"log"
 
+	"github.com/uptempotech/blog-application/global"
+	"github.com/uptempotech/blog-application/proto"
 	"google.golang.org/grpc"
-	"uptempo.tech/blog-application/global"
-	"uptempo.tech/blog-application/proto"
 )
 
 func main() {

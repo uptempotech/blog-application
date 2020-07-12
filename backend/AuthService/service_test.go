@@ -1,10 +1,11 @@
 package main
 
 import (
-	"uptempo.tech/blog-application/global"
-	"uptempo.tech/blog-application/proto"
 	"context"
 	"testing"
+
+	"github.com/uptempotech/blog-application/global"
+	"github.com/uptempotech/blog-application/proto"
 
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"golang.org/x/crypto/bcrypt"
@@ -104,7 +105,7 @@ func (server authServer) Test_authServer_Signup(t *testing.T) {
 func Test_authServer_AuthUser(t *testing.T) {
 	server := authServer{}
 	res, err := server.AuthUser(context.Background(), &proto.AuthUserRequest{Token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoie1wiSURcIjpcIjVmMDc1MWM2ZmIxODM1NzZmZGEzMDI0N1wiLFwiVXNlcm5hbWVcIjpcIkNhcmxcIixcIkVtYWlsXCI6XCJ0ZXN0QGdtYWlsLmNvbVwiLFwiUGFzc3dvcmRcIjpcIiQyYSQxMCRmQVdhUDdMU1JFOTI4UFBsazJORU1lbjhRdlYzMHBHcy5CeG45ZVlHVDJ1Y3FTOHJPQWNXcVwifSJ9.si1IY2E-Idb2UqWHJQG3BH7XBZUKTMArhc0sFXVc4o8"})
-	if err != nil{
+	if err != nil {
 		t.Error("an error was returned")
 	}
 	if res.GetID() != "5f0751c6fb183576fda30247" || res.GetUsername() != "Carl" || res.GetEmail() != "test@gmail.com" {
